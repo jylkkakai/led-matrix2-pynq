@@ -45,6 +45,7 @@
  *   ps7_uart    115200 (configured by bootrom/bsp)
  */
 
+#include "led_matrix.h"
 #include "platform.h"
 
 int main() {
@@ -54,7 +55,15 @@ int main() {
   int *led = (int *)0x41200000;
   *led = 0xF;
 
+  reset_matrix();
+  // test(1);
+  // test(2);
+  // set_matrix();
+
+  // set_all();
   while (1) {
+    // set_all();
+    set_matrix();
   }
 
   cleanup_platform();

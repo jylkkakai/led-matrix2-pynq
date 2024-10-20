@@ -7,22 +7,21 @@ LD_SRCS += \
 ../src/lscript.ld 
 
 C_SRCS += \
-../src/Pixel.c \
+../src/led_matrix.c \
 ../src/main.c \
 ../src/platform.c 
 
 S_UPPER_SRCS += \
 
 OBJS += \
-./src/Pixel.o \
-./src/blinker.o \
+./src/led_matrix.o \
 ./src/main.o \
 ./src/platform.o 
 
 S_UPPER_DEPS += \
 
 C_DEPS += \
-./src/Pixel.d \
+./src/led_matrix.d \
 ./src/main.d \
 ./src/platform.d 
 
